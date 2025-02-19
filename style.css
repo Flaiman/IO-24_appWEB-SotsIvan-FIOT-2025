@@ -1,0 +1,283 @@
+@import url('https://fonts.cdnfonts.com/css/roboto');
+@import url('https://fonts.cdnfonts.com/css/pt-sans-narrow');
+*{
+    font-family: 'PT Sans Narrow', sans-serif;
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.banner-navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(255, 0, 0, 0.5);
+    padding: 15px 20px;
+    z-index: 2;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.banner-navbar img {
+    max-width: 120px;
+}
+
+.navbar-links {
+    display: flex;
+    gap: 20px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.navbar-links a {
+    text-decoration: none;
+    color: white;
+}
+
+.navbar-links a:hover {
+    color: gold;
+    transition-duration: 0.3s;
+}
+
+.navbar-search {
+    position: static;
+}
+
+.navbar-search input {
+    border: 0;
+    padding: 8px 15px;
+    border-radius: 30px;
+    font-size: 16px;
+    width: 150px;
+}
+.main-content{
+    margin-top: 50px;
+}
+.main-content h2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 50px;
+}
+
+.main-content h2::before,
+.main-content h2::after {
+    content: "";
+    width: 8%;
+    height: 2px; 
+    background-color: #000;
+}
+.main-content .row{
+    display: flex;
+    margin-bottom: 100px;
+}
+.main-content .row .col{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: 0.3s ease-in-out;
+}
+.main-content .row .col:hover{
+    scale: 1.05;
+    cursor: pointer;
+}
+.col-text{
+    font-size: 20px;
+}
+.price{
+    color: crimson;
+    font-size: 24px;
+    font-weight: bolder;
+}
+.creative-square-box {
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+    text-align: center;
+    height: 360px;
+    overflow: hidden;
+    display: table;
+}
+.nopadding {
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: 0;
+    margin-right: 0;
+}
+.creative-square-box .box {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center center;
+    display: flex; 
+    align-items: center;
+    justify-content: center; 
+}
+
+.creative-square-box .article {
+    text-align: center;
+    border: 2px solid rgba(255, 255, 255, 0.5); 
+    transition: 0.3s ease-in-out;
+    position: relative;
+    z-index: 2;
+}
+
+.creative-square-box .button {
+    color: #fff;
+    z-index: 2;
+    position: relative;
+    font-size: 30px;
+    text-transform: uppercase;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 23px 10px;
+    width: 350px;
+    line-height: 35px;
+    text-align: center;
+    display: block; 
+}
+.creative-square-box:before {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    content: "";
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 1;
+    transition: 0.4s ease-in-out;
+}
+.creative-square-box .article:hover{
+    border-color: white;
+}
+.creative-square-box .article:hover ~ .box::before,
+.creative-square-box:hover::before {
+    background: rgba(0, 0, 0, 0.6);
+}
+.main-table{
+    margin-bottom: 50px;
+}
+.main-table table{
+   display: flex;
+   justify-content: center;
+}
+.main-table td{
+    padding: 30px;
+}
+.main-table img{
+    opacity: 0.5;
+    transition: 0.3s ease-in-out;
+}
+.main-table img:hover{
+    opacity: 1;
+}
+.bottom-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    max-width: 1200px; 
+    margin: 0 auto; 
+    gap: 50px;
+}
+
+.bottom-text h3 {
+    width: 200px;
+    font-size: 24px; 
+    text-transform: uppercase;
+}
+
+.bottom-text p {
+    font-size: 18px;
+    max-width: 900px; 
+    line-height: 1.6; 
+}
+.main-content .row-2{
+    margin-bottom: 40px;
+}
+span{
+    font-weight: bolder;
+}
+footer{
+    background-color: #37353a;
+    color: white;
+    font-size: 18px;
+    margin-top: 50px;
+}
+footer .rows{
+    display: flex;
+    justify-content: space-between;
+}
+.rows .column{
+    display: flex;
+    flex-direction: column;
+    margin-top: 25px;
+}
+footer .rights{
+    background-color: black;
+    text-align: center;
+}
+@media (max-width: 768px){
+    body{
+        overflow-x:hidden;
+    }
+    .main-table table,
+    .main-table tr {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .main-table td {
+        width: 30%; 
+        display: flex;
+        justify-content: center;
+        padding: 5px;
+    }
+
+    .main-table td img {
+        max-width: 100%;
+        height: auto;
+    }
+    .banner-navbar {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+        position: relative;
+        background-color: rgb(139, 0, 0);
+    }
+
+    .navbar-links {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    .navbar-search input {
+        width: 100%;
+        max-width: 250px;
+    }
+    .main-content .row{
+        flex-direction: column;
+    }
+    .bottom-text p{
+        font-size: 14px;
+    }
+    .bottom-text{
+        padding: 10px;
+    }
+    footer .rows{
+        flex-direction: column;
+    }
+    .row-cols-4>*{
+        width: 100%;
+    }
+}
