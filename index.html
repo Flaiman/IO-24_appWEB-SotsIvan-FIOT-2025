@@ -11,54 +11,56 @@
 </head>
 
 <body>
-
-    <div class="banner-wrap">
-        <div class="banner-navbar">
-            <img src="images/logo.png">
-            <div class="navbar-links">
-                <a href="#">ГІТАРИ</a>
-                <a href="#">ОБЛАДНАННЯ</a>
-                <a href="#">АКСЕСУАРИ</a>
-                <a href="#">АКЦІЇ</a>
+    <header>
+        <div class="banner-wrap">
+            <div class="banner-navbar">
+                <img src="images/logo.png">
+                <div class="navbar-links">
+                    <a href="#">ГІТАРИ</a>
+                    <a href="#">ОБЛАДНАННЯ</a>
+                    <a href="#">АКСЕСУАРИ</a>
+                    <a href="#">АКЦІЇ</a>
+                </div>
+                <form class="navbar-search" action="post">
+                    <input type="text" placeholder="Пошук">
+                </form>
             </div>
-            <form class="navbar-search" action="post">
-                <input type="text" placeholder="Пошук">
-            </form>
+    
+            <div id="carouselExampleIndicators" class="carousel slide">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="images/banner.jpg" class="d-block w-100">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/banner.jpg" class="d-block w-100">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/banner.jpg" class="d-block w-100">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
         </div>
-
-        <div id="carouselExampleIndicators" class="carousel slide">
-            <div class="carousel-indicators">
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
-                    aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
-                    aria-label="Slide 2"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
-                    aria-label="Slide 3"></button>
-            </div>
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="images/banner.jpg" class="d-block w-100">
-                </div>
-                <div class="carousel-item">
-                    <img src="images/banner.jpg" class="d-block w-100">
-                </div>
-                <div class="carousel-item">
-                    <img src="images/banner.jpg" class="d-block w-100">
-                </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
-                data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
-                data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
-        </div>
-    </div>
-    <div class="main-content text-center">
+    </header>
+    
+    <main class="main-content text-center">
         <h2 class="fw-bold">ТОП ПРОДАЖІВ</h2>
         <div class="container text-center">
             <div class="row row-cols-4">
@@ -198,7 +200,7 @@
                 <br>
                 Все ще думаєте, яку <span>купити гітару для себе</span>? Тоді телефонуйте, нам є, що запропонувати вам.</p>
         </div>
-    </div>
+    </main>
     <footer>
         <div class="container">
             <div class="rows">
