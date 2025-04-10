@@ -1,0 +1,76 @@
+.main-content .row .col{
+    padding: 20px;
+}
+.main-content .row .col:hover{
+    border: 2px solid black;
+}
+.buy-btn{
+    background-color: #ff680d;
+    padding: 5px 15px;
+    color: white;
+    font-size: 25px;
+    transition-duration: 0.1s;
+}
+.buy-cont{
+    display: none;
+    text-align: start;
+}
+.buy-btn:hover{
+    background-color: #ff7d22;
+}
+.main-content .row .col:hover .buy-cont{
+    display: block;
+}
+.text-center .row .col p{
+    text-align: start;
+}
+.img-cont{
+    position: relative;
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.img-col {
+    max-height: 100%;
+    max-width: 100%;
+    object-fit: contain;
+}
+.discount{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.dis-price{
+    font-size: 20px;
+    color: #acacac;
+    text-decoration: line-through;
+}
+.sale-label {
+    position: absolute;
+    background-color: red;
+    color: white;
+    font-weight: bold;
+    padding: 5px 10px;
+    font-size: 16px;
+    top: 10px;
+    left: 10px;
+    border-radius: 5px;
+    z-index: 10;
+}
+@media (max-width: 768px){
+    .main-content .row .col:hover{
+        border: none;
+    }
+    .buy-cont{
+        display: block;
+    }
+    .main-content .row .col:hover{
+        scale: none;
+    }
+    .main-content .row .col::after{
+        width: 105%;
+    }
+}
