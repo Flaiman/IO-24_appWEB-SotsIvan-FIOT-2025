@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,7 +11,8 @@
     <link rel="stylesheet" href="../../styles/guitars.css">
     <link rel="stylesheet" href="../../styles/guitar_products.css">
 </head>
-<body>
+
+<body data-min-price="3000">
     <header class="page-header">
         <div class="banner-wrap">
             <div class="banner-navbar">
@@ -23,6 +25,8 @@
                 </div>
                 <form class="navbar-search" action="post">
                     <input type="text" placeholder="Пошук">
+                    <a href="" class="cart"><img class="cart-img"
+                            src="../../images/shopping-cart-outline-svgrepo-com.svg" alt=""></a>
                 </form>
             </div>
         </div>
@@ -30,78 +34,130 @@
     <main class="main-content">
         <h2 class="fw-bold">Класичні гітари</h2>
         <div class="container text-center">
-            <div class="row row-cols-4">
-                <div class="col">
-                    <a href=""><img src="../../images/classic/c1.webp" alt=""></a>
-                    <p class="col-text">Класична гітара YAMAHA C40</p>
-                    <p class="price">5528 UAH</p>
-                    <a href="" class="buy-cont"><p class="buy-btn">Купити</p></a>
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="filter-box p-3 border rounded">
+                        <h5>Фільтр</h5>
+                        <form>
+                            <div id="filter-block" class="mb-4">
+                                <div class="mb-3">
+                                    <label class="form-label">Ціна (до):</label>
+                                    <input type="number" id="max-price" class="form-control" placeholder="макс. ціна">
+                                </div>
+                                <div class="mb-3">
+                                    <label class="form-label">Бренд:</label>
+                                    <select class="form-select" id="brand-filter">
+                                        <option value="">Усі</option>
+                                        <option value="YAMAHA">Yamaha</option>
+                                        <option value="CORT">Cort</option>
+                                        <option value="ADMIRA">Admira</option>
+                                    </select>
+                                </div>
+                                <button type="button" id="apply-filter"
+                                    class="btn btn-primary w-100">Застосувати</button>
+                            </div>
+                        </form>
+                    </div>
                 </div>
-                <div class="col">
-                    <a href=""><img src="../../images/classic/c2.webp" alt=""></a>
-                    <p class="col-text">Класична гітара CORT AC100 (Open Pore)</p>
-                    <p class="price">4799 UAH</p>
-                    <a href="" class="buy-cont"><p class="buy-btn">Купити</p></a>
-                </div>
-                <div class="col">
-                    <a href=""><img src="../../images/classic/c3.webp" alt=""></a>
-                    <p class="col-text">Класична гітара YAMAHA C40M</p>
-                    <p class="price">5528 UAH</p>
-                    <a href="" class="buy-cont"><p class="buy-btn">Купити</p></a>
-                </div>
-                <div class="col">
-                    <a href=""><img src="../../images/classic/c4.webp" alt=""></a>
-                    <p class="col-text">Класична гітара ADMIRA A2</p>
-                    <p class="price">19028 UAH</p>
-                    <a href="" class="buy-cont"><p class="buy-btn">Купити</p></a>
-                </div>
-                <div class="col">
-                    <a href=""><img src="../../images/classic/c5.webp" alt=""></a>
-                    <p class="col-text">Класична гітара YAMAHA CG-TA TransAcoustic</p>
-                    <p class="price">4528 UAH</p>
-                    <a href="" class="buy-cont"><p class="buy-btn">Купити</p></a>
-                </div>
-                <div class="col">
-                    <a href=""><img src="../../images/classic/c6.webp" alt=""></a>
-                    <p class="col-text">Класична гітара YAMAHA C40B</p>
-                    <p class="price">5228 UAH</p>
-                    <a href="" class="buy-cont"><p class="buy-btn">Купити</p></a>
-                </div>
-                <div class="col">
-                    <a href=""><img src="../../images/classic/c7.webp" alt=""></a>
-                    <p class="col-text">Класична гітара ADMIRA A10</p>
-                    <p class="price">25528 UAH</p>
-                    <a href="" class="buy-cont"><p class="buy-btn">Купити</p></a>
-                </div>
-                <div class="col">
-                    <a href=""><img src="../../images/classic/c8.webp" alt=""></a>
-                    <p class="col-text">Класична гітара ADMIRA A20</p>
-                    <p class="price">5528 UAH</p>
-                    <a href="" class="buy-cont"><p class="buy-btn">Купити</p></a>
-                </div>
-                <div class="col">
-                    <a href=""><img src="../../images/classic/c9.webp" alt=""></a>
-                    <p class="col-text">Класична гітара YAMAHA CX40</p>
-                    <p class="price">4558 UAH</p>
-                    <a href="" class="buy-cont"><p class="buy-btn">Купити</p></a>
-                </div>
-                <div class="col">
-                    <a href=""><img src="../../images/classic/c10.webp" alt=""></a>
-                    <p class="col-text">Класична гітара YAMAHA GC32C</p>
-                    <p class="price">7648 UAH</p>
-                    <a href="" class="buy-cont"><p class="buy-btn">Купити</p></a>
-                </div>
-                <div class="col">
-                    <a href=""><img src="../../images/classic/c11.webp" alt=""></a>
-                    <p class="col-text">Класична гітара YAMAHA C70</p>
-                    <p class="price">8123 UAH</p>
-                    <a href="" class="buy-cont"><p class="buy-btn">Купити</p></a>
-                </div>
-                <div class="col">
-                    <a href=""><img src="../../images/classic/c12.webp" alt=""></a>
-                    <p class="col-text">Класична гітара CORT CEC7 (Natural)</p>
-                    <p class="price">5528 UAH</p>
-                    <a href="" class="buy-cont"><p class="buy-btn">Купити</p></a>
+                <div class="col-md-9">
+                    <div class="row row-cols-1 row-cols-md-3 g-4">
+                        <div class="col" data-price="5528" data-brand="YAMAHA">
+                            <a href=""><img src="../../images/classic/c1.webp" alt=""></a>
+                            <p class="col-text">Класична гітара YAMAHA C40</p>
+                            <p class="price">5528 UAH</p>
+                            <a href="" class="buy-cont">
+                                <p class="buy-btn">Купити</p>
+                            </a>
+                        </div>
+                        <div class="col" data-price="4799" data-brand="CORT">
+                            <a href=""><img src="../../images/classic/c2.webp" alt=""></a>
+                            <p class="col-text">Класична гітара CORT AC100 (Open Pore)</p>
+                            <p class="price">4799 UAH</p>
+                            <a href="" class="buy-cont">
+                                <p class="buy-btn">Купити</p>
+                            </a>
+                        </div>
+                        <div class="col" data-price="5528" data-brand="YAMAHA">
+                            <a href=""><img src="../../images/classic/c3.webp" alt=""></a>
+                            <p class="col-text">Класична гітара YAMAHA C40M</p>
+                            <p class="price">5528 UAH</p>
+                            <a href="" class="buy-cont">
+                                <p class="buy-btn">Купити</p>
+                            </a>
+                        </div>
+                        <div class="col" data-price="19028" data-brand="ADMIRA">
+                            <a href=""><img src="../../images/classic/c4.webp" alt=""></a>
+                            <p class="col-text">Класична гітара ADMIRA A2</p>
+                            <p class="price">19028 UAH</p>
+                            <a href="" class="buy-cont">
+                                <p class="buy-btn">Купити</p>
+                            </a>
+                        </div>
+                        <div class="col" data-price="4528" data-brand="YAMAHA">
+                            <a href=""><img src="../../images/classic/c5.webp" alt=""></a>
+                            <p class="col-text">Класична гітара YAMAHA CG-TA TransAcoustic</p>
+                            <p class="price">4528 UAH</p>
+                            <a href="" class="buy-cont">
+                                <p class="buy-btn">Купити</p>
+                            </a>
+                        </div>
+                        <div class="col" data-price="5228" data-brand="YAMAHA">
+                            <a href=""><img src="../../images/classic/c6.webp" alt=""></a>
+                            <p class="col-text">Класична гітара YAMAHA C40B</p>
+                            <p class="price">5228 UAH</p>
+                            <a href="" class="buy-cont">
+                                <p class="buy-btn">Купити</p>
+                            </a>
+                        </div>
+                        <div class="col" data-price="25528" data-brand="ADMIRA">
+                            <a href=""><img src="../../images/classic/c7.webp" alt=""></a>
+                            <p class="col-text">Класична гітара ADMIRA A10</p>
+                            <p class="price">25528 UAH</p>
+                            <a href="" class="buy-cont">
+                                <p class="buy-btn">Купити</p>
+                            </a>
+                        </div>
+                        <div class="col" data-price="5528" data-brand="ADMIRA">
+                            <a href=""><img src="../../images/classic/c8.webp" alt=""></a>
+                            <p class="col-text">Класична гітара ADMIRA A20</p>
+                            <p class="price">5528 UAH</p>
+                            <a href="" class="buy-cont">
+                                <p class="buy-btn">Купити</p>
+                            </a>
+                        </div>
+                        <div class="col" data-price="4558" data-brand="YAMAHA">
+                            <a href=""><img src="../../images/classic/c9.webp" alt=""></a>
+                            <p class="col-text">Класична гітара YAMAHA CX40</p>
+                            <p class="price">4558 UAH</p>
+                            <a href="" class="buy-cont">
+                                <p class="buy-btn">Купити</p>
+                            </a>
+                        </div>
+                        <div class="col" data-price="7648" data-brand="YAMAHA">
+                            <a href=""><img src="../../images/classic/c10.webp" alt=""></a>
+                            <p class="col-text">Класична гітара YAMAHA GC32C</p>
+                            <p class="price">7648 UAH</p>
+                            <a href="" class="buy-cont">
+                                <p class="buy-btn">Купити</p>
+                            </a>
+                        </div>
+                        <div class="col" data-price="8123" data-brand="YAMAHA">
+                            <a href=""><img src="../../images/classic/c11.webp" alt=""></a>
+                            <p class="col-text">Класична гітара YAMAHA C70</p>
+                            <p class="price">8123 UAH</p>
+                            <a href="" class="buy-cont">
+                                <p class="buy-btn">Купити</p>
+                            </a>
+                        </div>
+                        <div class="col" data-price="5528" data-brand="CORT">
+                            <a href=""><img src="../../images/classic/c12.webp" alt=""></a>
+                            <p class="col-text">Класична гітара CORT CEC7 (Natural)</p>
+                            <p class="price">5528 UAH</p>
+                            <a href="" class="buy-cont">
+                                <p class="buy-btn">Купити</p>
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -135,8 +191,10 @@
             ©2025 Всі права захищені
         </div>
     </footer>
+    <script src="../../script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
 </body>
+
 </html>

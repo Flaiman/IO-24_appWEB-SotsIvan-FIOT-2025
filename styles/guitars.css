@@ -6,6 +6,9 @@
     background-position: bottom;
     background-attachment:fixed;
 }
+.filter-box {
+    background-color: #f8f9fa;
+}
 @media (max-width: 768px){
     .main-content .row{
         align-items: center;

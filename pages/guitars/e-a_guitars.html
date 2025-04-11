@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="../../styles/guitars.css">
     <link rel="stylesheet" href="../../styles/guitar_products.css">
 </head>
-<body>
+<body data-min-price="5500">
     <header class="page-header">
         <div class="banner-wrap">
             <div class="banner-navbar">
@@ -23,6 +23,7 @@
                 </div>
                 <form class="navbar-search" action="post">
                     <input type="text" placeholder="Пошук">
+                    <a href="" class="cart"><img class="cart-img" src="../../images/shopping-cart-outline-svgrepo-com.svg" alt=""></a>
                 </form>
             </div>
         </div>
@@ -30,78 +31,106 @@
     <main class="main-content">
         <h2 class="fw-bold">Електро-Акустичні Гітари</h2>
         <div class="container text-center">
-            <div class="row row-cols-4">
-                <div class="col">
-                    <a href=""><img src="../../images/e-a/ea1.webp" alt=""></a>
-                    <p class="col-text">Електроакустична гітара CORT AD810E (Open Pore)</p>
-                    <p class="price">5528 UAH</p>
-                    <a href="" class="buy-cont"><p class="buy-btn">Купити</p></a>
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="filter-box p-3 border rounded">
+                        <h5>Фільтр</h5>
+                        <form>
+                            <div id="filter-block" class="mb-4">
+                                <div class="mb-3">
+                                    <label class="form-label">Ціна (до):</label>
+                                    <input type="number" id="max-price" class="form-control" placeholder="макс. ціна">
+                                </div>
+                                <div class="mb-3">
+                                    <label class="form-label">Бренд:</label>
+                                    <select class="form-select" id="brand-filter">
+                                        <option value="">Усі</option>
+                                        <option value="YAMAHA">Yamaha</option>
+                                        <option value="CORT">Cort</option>
+                                        <option value="MARTIN">Martin</option>
+                                    </select>
+                                </div>
+                                <button type="button" id="apply-filter"
+                                    class="btn btn-primary w-100">Застосувати</button>
+                            </div>
+                        </form>
+                    </div>
                 </div>
-                <div class="col">
-                    <a href=""><img src="../../images/e-a/ea2.webp" alt=""></a>
-                    <p class="col-text">Електроакустична гітара CORT MR600F (Natural Satin)</p>
-                    <p class="price">13799 UAH</p>
-                    <a href="" class="buy-cont"><p class="buy-btn">Купити</p></a>
-                </div>
-                <div class="col">
-                    <a href=""><img src="../../images/e-a/ea3.webp" alt=""></a>
-                    <p class="col-text">Електроакустична гітара CORT AF510E (Black Satin)</p>
-                    <p class="price">6528 UAH</p>
-                    <a href="" class="buy-cont"><p class="buy-btn">Купити</p></a>
-                </div>
-                <div class="col">
-                    <a href=""><img src="../../images/e-a/ea4.webp" alt=""></a>
-                    <p class="col-text">Електроакустична гітара YAMAHA FSX5</p>
-                    <p class="price">19028 UAH</p>
-                    <a href="" class="buy-cont"><p class="buy-btn">Купити</p></a>
-                </div>
-                <div class="col">
-                    <a href=""><img src="../../images/e-a/ea5.webp" alt=""></a>
-                    <p class="col-text">Електроакустична гітара YAMAHA FGX5</p>
-                    <p class="price">24528 UAH</p>
-                    <a href="" class="buy-cont"><p class="buy-btn">Купити</p></a>
-                </div>
-                <div class="col">
-                    <a href=""><img src="../../images/e-a/ea6.webp" alt=""></a>
-                    <p class="col-text">Електроакустична гітара YAMAHA FG-TA TransAcoustic</p>
-                    <p class="price">35228 UAH</p>
-                    <a href="" class="buy-cont"><p class="buy-btn">Купити</p></a>
-                </div>
-                <div class="col">
-                    <a href=""><img src="../../images/e-a/ea7.webp" alt=""></a>
-                    <p class="col-text">Електроакустична гітара YAMAHA FG-TA TransAcoustic</p>
-                    <p class="price">25528 UAH</p>
-                    <a href="" class="buy-cont"><p class="buy-btn">Купити</p></a>
-                </div>
-                <div class="col">
-                    <a href=""><img src="../../images/e-a/ea8.webp" alt=""></a>
-                    <p class="col-text">Електроакустична гітара CORT Jade Classic</p>
-                    <p class="price">15528 UAH</p>
-                    <a href="" class="buy-cont"><p class="buy-btn">Купити</p></a>
-                </div>
-                <div class="col">
-                    <a href=""><img src="../../images/e-a/ea9.webp" alt=""></a>
-                    <p class="col-text">Електроакустична гітара CORT Jade Classic</p>
-                    <p class="price">34558 UAH</p>
-                    <a href="" class="buy-cont"><p class="buy-btn">Купити</p></a>
-                </div>
-                <div class="col">
-                    <a href=""><img src="../../images/e-a/ea10.webp" alt=""></a>
-                    <p class="col-text">Електроакустична гітара Martin D-10E-01</p>
-                    <p class="price">27648 UAH</p>
-                    <a href="" class="buy-cont"><p class="buy-btn">Купити</p></a>
-                </div>
-                <div class="col">
-                    <a href=""><img src="../../images/e-a/ea11.webp" alt=""></a>
-                    <p class="col-text">Електроакустична гітара YAMAHA LS-TA TransAcoustic</p>
-                    <p class="price">18123 UAH</p>
-                    <a href="" class="buy-cont"><p class="buy-btn">Купити</p></a>
-                </div>
-                <div class="col">
-                    <a href=""><img src="../../images/e-a/ea12.webp" alt=""></a>
-                    <p class="col-text">Електроакустична гітара YAMAHA FX310A II</p>
-                    <p class="price">25528 UAH</p>
-                    <a href="" class="buy-cont"><p class="buy-btn">Купити</p></a>
+                <div class="col-md-9">
+                    <div class="row row-cols-1 row-cols-md-3 g-4">
+                        <div class="col" data-price="5528" data-brand="CORT">
+                            <a href=""><img src="../../images/e-a/ea1.webp" alt=""></a>
+                            <p class="col-text">Електроакустична гітара CORT AD810E (Open Pore)</p>
+                            <p class="price">5528 UAH</p>
+                            <a href="" class="buy-cont"><p class="buy-btn">Купити</p></a>
+                        </div>
+                        <div class="col" data-price="13799" data-brand="CORT">
+                            <a href=""><img src="../../images/e-a/ea2.webp" alt=""></a>
+                            <p class="col-text">Електроакустична гітара CORT MR600F (Natural Satin)</p>
+                            <p class="price">13799 UAH</p>
+                            <a href="" class="buy-cont"><p class="buy-btn">Купити</p></a>
+                        </div>
+                        <div class="col" data-price="6528" data-brand="CORT">
+                            <a href=""><img src="../../images/e-a/ea3.webp" alt=""></a>
+                            <p class="col-text">Електроакустична гітара CORT AF510E (Black Satin)</p>
+                            <p class="price">6528 UAH</p>
+                            <a href="" class="buy-cont"><p class="buy-btn">Купити</p></a>
+                        </div>
+                        <div class="col" data-price="19028" data-brand="YAMAHA">
+                            <a href=""><img src="../../images/e-a/ea4.webp" alt=""></a>
+                            <p class="col-text">Електроакустична гітара YAMAHA FSX5</p>
+                            <p class="price">19028 UAH</p>
+                            <a href="" class="buy-cont"><p class="buy-btn">Купити</p></a>
+                        </div>
+                        <div class="col" data-price="24528" data-brand="YAMAHA">
+                            <a href=""><img src="../../images/e-a/ea5.webp" alt=""></a>
+                            <p class="col-text">Електроакустична гітара YAMAHA FGX5</p>
+                            <p class="price">24528 UAH</p>
+                            <a href="" class="buy-cont"><p class="buy-btn">Купити</p></a>
+                        </div>
+                        <div class="col" data-price="35228" data-brand="YAMAHA">
+                            <a href=""><img src="../../images/e-a/ea6.webp" alt=""></a>
+                            <p class="col-text">Електроакустична гітара YAMAHA FG-TA TransAcoustic</p>
+                            <p class="price">35228 UAH</p>
+                            <a href="" class="buy-cont"><p class="buy-btn">Купити</p></a>
+                        </div>
+                        <div class="col" data-price="25528" data-brand="YAMAHA">
+                            <a href=""><img src="../../images/e-a/ea7.webp" alt=""></a>
+                            <p class="col-text">Електроакустична гітара YAMAHA FG-TA TransAcoustic</p>
+                            <p class="price">25528 UAH</p>
+                            <a href="" class="buy-cont"><p class="buy-btn">Купити</p></a>
+                        </div>
+                        <div class="col" data-price="15528" data-brand="CORT">
+                            <a href=""><img src="../../images/e-a/ea8.webp" alt=""></a>
+                            <p class="col-text">Електроакустична гітара CORT Jade Classic</p>
+                            <p class="price">15528 UAH</p>
+                            <a href="" class="buy-cont"><p class="buy-btn">Купити</p></a>
+                        </div>
+                        <div class="col" data-price="34558" data-brand="CORT">
+                            <a href=""><img src="../../images/e-a/ea9.webp" alt=""></a>
+                            <p class="col-text">Електроакустична гітара CORT Jade Classic</p>
+                            <p class="price">34558 UAH</p>
+                            <a href="" class="buy-cont"><p class="buy-btn">Купити</p></a>
+                        </div>
+                        <div class="col" data-price="27648" data-brand="MARTIN">
+                            <a href=""><img src="../../images/e-a/ea10.webp" alt=""></a>
+                            <p class="col-text">Електроакустична гітара Martin D-10E-01</p>
+                            <p class="price">27648 UAH</p>
+                            <a href="" class="buy-cont"><p class="buy-btn">Купити</p></a>
+                        </div>
+                        <div class="col" data-price="18123" data-brand="YAMAHA">
+                            <a href=""><img src="../../images/e-a/ea11.webp" alt=""></a>
+                            <p class="col-text">Електроакустична гітара YAMAHA LS-TA TransAcoustic</p>
+                            <p class="price">18123 UAH</p>
+                            <a href="" class="buy-cont"><p class="buy-btn">Купити</p></a>
+                        </div>
+                        <div class="col" data-price="25528" data-brand="YAMAHA">
+                            <a href=""><img src="../../images/e-a/ea12.webp" alt=""></a>
+                            <p class="col-text">Електроакустична гітара YAMAHA FX310A II</p>
+                            <p class="price">25528 UAH</p>
+                            <a href="" class="buy-cont"><p class="buy-btn">Купити</p></a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -135,6 +164,7 @@
             ©2025 Всі права захищені
         </div>
     </footer>
+    <script src="../../script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>

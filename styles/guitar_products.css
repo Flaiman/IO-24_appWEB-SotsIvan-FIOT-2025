@@ -60,6 +60,9 @@
     border-radius: 5px;
     z-index: 10;
 }
+.main-content .row{
+    margin-bottom: 0;
+}
 @media (max-width: 768px){
     .main-content .row .col:hover{
         border: none;
